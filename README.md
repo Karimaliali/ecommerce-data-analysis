@@ -1,16 +1,70 @@
-# ecommerce-data-analysis
-This project analyzes real e-commerce sales data to discover insights about customer behavior, product performance, and sales trends.  
-The goal is to demonstrate a full data analysis workflow — from raw data to visualization.
+📦 E-commerce Data Analysis & Customer Segmentation (RFM + Dashboard)
+This project provides a complete end-to-end analysis of an e-commerce dataset,
+including data cleaning, exploratory data analysis (EDA), RFM segmentation,
+and an interactive dashboard built with Streamlit, using Plotly visualizations.
+🚀 Project Structure
+ecommerce-data-analysis/
+│
+├── data/
+│   └── raw/
+│       └── digital_market.csv
+│
+├── Notebooks/
+│   └── exploration.ipynb
+│
+├── Src/
+│   └── rfm_data.py
+│
+├── dashboard/
+│   └── app.py
+│
+└── README.md
+📊 Features
+✅ 1. Data Cleaning
+Remove negative quantities and prices
+Drop missing CustomerID
+Create total revenue column
+Convert InvoiceDate to datetime
+✅ 2. Exploratory Data Analysis
+Top selling products
+Top revenue products
+Sales by country
+Monthly sales trends
+Customer spending distribution
+Scatter analysis (price vs quantity)
+✅ 3. RFM Segmentation
+Customers are divided into segments based on:
+R – Recency: Last purchase date
+F – Frequency: Number of invoices
+M – Monetary: Total spending
+Segments include:
+Champions
+Loyal Customers
+New Customers
+At Risk
+Hibernating
+Potential
+✅ 4. Interactive Dashboard (Streamlit + Plotly)
+Real-time charts
+Filter customers
+View RFM segmentation visually
+Monthly trends and product insights
+Run dashboard: streamlit run dashboard/app.py
+🛠️ Technologies Used
+Python
+Pandas
+NumPy
+Matplotlib
+Plotly
+Streamlit
+Markdown
+Jupyter Notebook
+▶️ How to Run the Project
+1. Install dependencies   pip install -r requirements.txt
+2. Start Jupyter Notebook    python -m notebook
+3. Run Streamlit Dashboard    streamlit run dashboard/app.py
 
----
-
-## 📊 Project Overview
-We use real transactional data from an online retail store.  
-Main steps of the analysis:
-
-1. Data Cleaning – Handle missing values, negative quantities, and invalid records  
-2. Feature Engineering – Create new columns like TotalPrice, Year, Month, etc.  
-3. Exploratory Data Analysis (EDA) – Visualize customer and sales patterns  
-4. Customer Segmentation (RFM Analysis) – Identify valuable customer groups  
-5. Dashboard – Build a simple Streamlit dashboard for interactive visualization
-
+❤️ Author
+Karim Elshazly – Data Analysis & Visualization
+🎯 Ready to Impress
+This project is designed to look professional on GitHub and impressive in portfolio or job interviews.
